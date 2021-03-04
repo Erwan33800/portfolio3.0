@@ -218,3 +218,6 @@ img{
     margin-top: 10px;
     transition-delay: .3s;
 }
+.content h2 a{
+    color: #0a2a43;
+}
