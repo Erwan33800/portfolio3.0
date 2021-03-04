@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    
+    background: #0a2a43;
+    color: #f1f1f1;
+}
+.imgprofil{
+    position: relative;
+}
+.img{
+    position: relative;
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+}
+.titre{
+    width: 760px;
+    border-bottom: 5px solid #f1f1f1;
+    overflow: hidden;
+    animation: reveal 2s linear forwards;
+}
+@keyframes reveal {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+    30% {
+        width: 760px;
+        height: 0px;
+    }
+    60% {
+        width: 760px;
+        height: 90px;
+    }
+}
+.welcome h1{
+    font-size: 50px;
+}
+.text-typing{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.social{
+    display: flex;
+    margin-top: 20px;
+}
+.social a {
+    margin-left: 20px;
+    font-size: 40px;
+    color: #f1f1f1;
+}
+@media screen and (max-width: 900px){
+    .titre{
+        width: 500px;
+    }
+    .welcome h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 550px){
+    .titre{
+        width: 300px;
+    }
+    .welcome h1{
+        font-size: 20px;
+    }
+}
+/* -------- Nav ----------- */
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-top: 60px;
+}
+.box {
+    position: relative;
+    width: calc(250px - 30px);
+    height: calc(200px - 30px);
+    background: #f1f1f1;
+    color: #0a2a43;
+    margin: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0a2a43;
+    transition: .5s;
+    z-index: 1;
+}
+.box:hover .icon {
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.fas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    transition: .5s;
+    color: #f1f1f1;
+}
+.box:hover .icon .fas{
+    font-size: 40px;
+}
+.content{
+    margin-top: 55%;
+    text-align: center;
+}
+@media screen and (max-width: 900px){
+    .box{
+        width: calc(200px - 30px);
+        margin: 20px;
+    }
+    .content h3{
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width: 550px){
+    .box{
+        width: calc(200px - 30px);
+        height: calc(100px - 30px);
+    }
+    .fas{
+        font-size: 40px;
+    }
+    .box:hover .icon .fas{
+        font-size: 30px;
+    }
+    
+}

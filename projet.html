@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/6c6242c08b.js" crossorigin="anonymous"></script>
+    <title>Presentation</title>
+</head>
+<body>
+    <section class="parallax">
+        <img src="images/bg.jpg" id="bg">
+        <img src="images/moon.png" id="moon">
+        <img src="images/mountain.png" id="mountain">
+        <img src="images/road.png" id="road">
+        <h1>Mes Projets</h1>
+    </section>
+    <div class="home">
+        <a href="index.html"><i class="fas fa-home"></i></a>
+    </div>
+
+    
+    <div class="titre-projet">
+        <h2>Florilège des projets que j'ai développé</h2>
+    </div>
+    
+    <section class="projet">
+        <div class="container">
+            <div class="card">
+                <div class="imgbox">
+                    <img src="images/pngwave.png" alt="virus">
+                </div>
+                <div class="content">
+                    <h2><a href="https://erwan33800.github.io/click_game/">AIM tracking</a> </h2>
+                    <p>Petit pour vaincre le virus en temps de confinement !</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgbox">
+                    <img src="images/codepen-brands.svg" alt="virus">
+                </div>
+                <div class="content">
+                    <h2><a href="https://codepen.io/erwan33800">Profil CodePen</a></h2>
+                    <p>Petite librairie de projets en cours/terminés.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgbox">
+                    <img src="images/img-info-3.jpg" alt="gym">
+                </div>
+                <div class="content">
+                    <h2><a href="https://erwan33800.github.io/sitegym/">Site GYM</a></h2>
+                    <p>Site fictif pour salle de gym</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgbox">
+                    <img src="images/wine.jpg" alt="virus">
+                </div>
+                <div class="content">
+                    <h2>Projet My_cave</h2>
+                    <p>Projet de fin de formation, site pour une cave à vin d'un particulier</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+        }) 
+    </script>
+</body>
+</html>
