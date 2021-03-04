@@ -58,6 +58,22 @@ body{
     font-size: 40px;
     color: #f1f1f1;
 }
+@media screen and (max-width: 900px){
+    .titre{
+        width: 500px;
+    }
+    .welcome h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 550px){
+    .titre{
+        width: 300px;
+    }
+    .welcome h1{
+        font-size: 20px;
+    }
+}
 /* -------- Nav ----------- */
 
 .container {
@@ -111,4 +127,26 @@ body{
 .content{
     margin-top: 55%;
     text-align: center;
+}
+@media screen and (max-width: 900px){
+    .box{
+        width: calc(200px - 30px);
+        margin: 20px;
+    }
+    .content h3{
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width: 550px){
+    .box{
+        width: calc(200px - 30px);
+        height: calc(100px - 30px);
+    }
+    .fas{
+        font-size: 40px;
+    }
+    .box:hover .icon .fas{
+        font-size: 30px;
+    }
+    
 }

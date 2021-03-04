@@ -74,6 +74,11 @@ h1{
     font-size: 30px;
 }
 .presentation{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 60px;
     text-align: center;
     color: #f1f1f1;
@@ -91,7 +96,6 @@ p{
     width: 80px;
     height: 80px;
     margin-top: 30px;
-    margin-left: 45%
 }
 .cv:hover{
     
@@ -151,6 +155,20 @@ a{
 .php{
     width: 60%;
 }
+@media screen and (max-width: 600px){
+    .skills{
+        width: 350px;
+    }
+}
+@media screen and (max-width: 450px){
+    .skills{
+        width: 200px;
+    }
+    .skills h3{
+        font-size: 25px;
+    }
+}
+
 /* ------------ Section projet-------------- */
 .titre-projet{
     color: #f1f1f1;
